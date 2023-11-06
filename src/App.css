@@ -1,0 +1,272 @@
+*{
+    margin: 0%;
+    padding: 0%;
+} 
+ .navbar{
+    width: 100%;
+   height: 75px;
+   display: flex;
+   justify-content: space-evenly;
+   border-bottom: 2px solid black;
+   padding: 10px;
+
+}
+#div1{
+   width: 12%;
+   height: 100%;
+   
+   display: flex;
+   justify-content: space-between;
+   margin-left: 5px;
+}
+#nav1 {
+   width: 28%;
+   height: 100%;
+   margin-left: 3%;
+   font-size: 40px;
+   border: none;
+   background-color: white;
+   
+}
+#nav2 {
+   width: 65%;
+   height: 100%;
+   background-image: url('https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500');
+   background-size: cover;
+   
+}
+#div2{
+   width: 50%;
+   height: 100%;
+ 
+   display: flex;
+   justify-content: space-between;
+}
+#nav3{
+   width: 90%;
+   height: 100%;
+   background-color: rgb(238, 219, 219);
+   border-radius: 30px;
+   border: 1px solid black;
+   display: flex;
+}
+.search{
+   width: 90%;
+   height: 100%;
+   display: flex;
+}
+.search-amazon{
+   width: 90%;
+   height: 100%;
+   border-bottom-left-radius: 30px;
+   border-top-left-radius: 30px;
+   font-size: 30px;
+}
+.search-icon{
+   width: 10%;
+   height: 100%;
+   border-bottom-right-radius: 30px;
+   border-top-right-radius: 30px;
+   border: 1px solid black;
+   font-size: 35px;
+}
+#nav4{
+   width: 7%;
+   height: 100%;
+   border: 1px solid black;
+   /* position: relative;
+   left: 10px; */
+   border-radius: 50%;
+   font-size: 30px;
+}    
+#div3{
+   width: 10%;
+   height: 100%;
+   border-radius: 30px;
+   margin-right: 2%;
+   font-size: 20px;
+   }
+#body{
+   margin: 0%;
+}
+#container2{
+   display: flex;
+   width: 100%;
+   height: 880px;
+   margin: 0px;
+}
+#sidebar{
+   width: 10%;
+   height: 100%;
+   border-right: 2px solid black;
+   display: flex;
+   flex-direction: column;
+}
+#main{
+   width: 90%;
+   height: 95%;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   column-gap: 5rem;
+   grid-template-rows: repeat(8,1fr);
+   row-gap: 1rem;
+   padding: 5%;
+}
+/* @media(max-width:1000px) { */
+  /* #main{
+   width: 90%;
+   height: 95%;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   column-gap: 5rem;
+   grid-template-rows: repeat(12,1fr);
+   row-gap: 1rem;
+  } */
+/* } */
+.item{
+   /* border: 2px solid black; */
+   display: flex;
+   border-radius: 10px;
+}
+.content1{
+
+   background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-template-design-d45e855a31739ec1f58b2d0ffb7013df_screen.jpg?ts=1591603072);
+   background-size: cover;
+}
+.content2{
+   background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-with-surprised-man-design-template-d36506fbbdd2870d4deacf0d52f1fdf3_screen.jpg?ts=1673490451);
+   background-size: cover;
+}
+.content3{
+   background-image: url(https://content.wepik.com/statics/8315911/preview-page0.jpg);
+   background-size: cover;
+}
+.content4{
+   background-image: url(https://img.freepik.com/premium-vector/pop-art-comics-book-magazine-cover-template-cartoon-funny-vintage-strip-comic-superhero-text_182541-461.jpg?size=626&ext=jpg);
+   background-size: cover;
+}
+.content5{
+   background-image: url(https://cdn.dribbble.com/users/4908050/screenshots/14655981/media/a8756f9d242e4750dd96f2c3a44e62ee.jpg?resize=400x0);
+   background-size: cover;
+}
+
+.content6{
+   background-image: url(https://cdn.dribbble.com/users/6487308/screenshots/17212401/media/04c7f69c2cd72ff4abb4b89bce8f39c9.jpg?resize=400x300&vertical=center);
+   background-size: cover;
+}
+.con{
+   grid-row-start: 1;
+   grid-row-end: 4;
+}
+.con2{
+   grid-row-start: 5;
+   grid-row-end: 8;
+}
+.discription{
+   display: flex;
+   justify-content: space-between;
+
+}
+.profile1{
+   width: 20%;
+   height: 100%;
+   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
+   background-size: cover;
+   position: relative;
+}
+.dis1{
+   width: 80%;
+   height: 100%;
+   position: relative;
+   top: 12px;
+}
+.profile2{
+   width: 15%;
+   height: 75%;
+   background-image: url("https://img.freepik.com/premium-vector/self-confident-young-caucasian-man-semi-flat-vector-character-head-office-worker-editable-cartoon-avatar-icon-face-emotion-colorful-spot-illustration-web-graphic-design-animation_151150-16190.jpg?w=2000");
+   background-size: cover;
+   position: relative;
+   top: 10px;
+}
+.dis2{
+   width: 80%;
+   height: 100%;
+   position: relative;
+   top: 12px;
+}
+.profile3{
+   width: 15%;
+   height: 85%;
+   background-image: url("https://static.vecteezy.com/system/resources/previews/009/749/656/original/male-profile-mascot-illustration-man-avatar-icon-cartoon-face-business-user-logo-free-vector.jpg");
+   background-size: cover;
+   position: relative;
+   top: 10px;
+}
+.dis3{
+   width: 80%;
+   height: 100%;
+   position: relative;
+   top: 12px;
+}
+.profile4{
+   width: 20%;
+   height: 100%;
+   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
+   background-size: cover;
+   position: relative;
+}
+.dis4{
+   width: 80%;
+   height: 100%;
+   position: relative;
+   top: 12px;
+}
+.profile5{
+   width: 20%;
+   height: 100%;
+   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
+   background-size: cover;
+   position: relative;
+}
+.dis5{
+   width: 80%;
+   height: 100%;
+   position: relative;
+   top: 12px;
+}
+.profile6{
+   width: 20%;
+   height: 100%;
+   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
+   background-size: cover;
+   position: relative;
+}
+.dis6{
+   width: 80%;
+   height: 100%;
+   position: relative;
+   top: 12px;
+}
+.logo-button{
+   width: 100%;
+   height: 50px;
+   border: none;
+   font-size: 20px;
+   background-color: white;
+}
+button:hover{
+   border: 2px solid black;
+}
+#nav1:hover{
+   border: 1px solid black;
+}
+.sign{
+   margin-left:10%;
+   color: blue;
+}
+.sign-logo{
+   color: blue;
+   font-size: 20px;
+}
+
+
