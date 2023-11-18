@@ -1,84 +1,136 @@
-import {AiFillHome} from 'react-icons/ai'
-import {IoIosMusicalNote} from 'react-icons/io'
-import {MdOutlineSubscriptions} from 'react-icons/md'
-import {AiOutlineShopping} from 'react-icons/ai'
-import {BsNewspaper} from 'react-icons/bs'
-import {SiYoutubegaming} from 'react-icons/si'
-import {MdOutlineSportsSoccer} from 'react-icons/md'
-import {MdOutlinePodcasts} from 'react-icons/md'
-import {AiOutlineBulb} from 'react-icons/ai'
-import Navbar from './Navbar'
-
-function Home() {
-    return (
-      <div>
-      <Navbar/>
-     <div id="container2">
-        <div id="sidebar">
-          <button class='logo-button'><AiFillHome/><span>Home</span></button>
-          <button class='logo-button'><IoIosMusicalNote/><span>Music</span></button>
-          <button class='logo-button'><MdOutlineSubscriptions/><span>Subcriptions</span></button><hr/>
-          <button class='logo-button'><AiOutlineShopping/><span>Shoping</span></button>
-          <button class='logo-button'><BsNewspaper/><span>News</span></button>
-          <button class='logo-button'><SiYoutubegaming/><span>Gaming</span></button>
-          <button class='logo-button'><MdOutlineSportsSoccer/><span>Sports</span></button>
-          <button class='logo-button'><MdOutlinePodcasts/><span>Podcasts</span></button>
-          <button class='logo-button'><AiOutlineBulb/><span>Learing</span></button>
-         
-        </div>
-        <div id="main">
-            <div class="item content1 con"></div>
-            <div class="item content2 con"></div>
-            <div class="item content3 con"></div>
-            <div class="item discription">
-              <div class="profile1"></div>
-              <div class="dis1">
-              <h5>10 hours of pure black screen in 4k! (read description)</h5>
-              <p>CandRfun .486K views  5 months ago</p>
-              </div>
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import Header from './Header'
+import {AiOutlineRight} from 'react-icons/ai'
+import {GoHomeFill} from 'react-icons/go'
+import {FiPlayCircle} from 'react-icons/fi'
+import {BsCollectionPlay} from 'react-icons/bs'
+import {RxAvatar} from 'react-icons/rx'
+import {AiOutlinePlaySquare} from 'react-icons/ai'
+import { HiSignal } from "react-icons/hi2";
+import {AiOutlineClockCircle} from 'react-icons/ai'
+import {BiSolidLike} from 'react-icons/bi'
+import videosJson from './my images/useful-data-main/videos.json'
+import { Link } from 'react-router-dom'
+function Videogrid(props){
+    let myvideo=props.myvideo
+    return(
+      <div className="a">
+        <div>
+          {/* <img className='tbn' src={myvideo.thumbnail.url} /> */}
+          <Link to={`/Video?id=${myvideo.id}`}><img className='tbn' src={myvideo.thumbnail.url} /></Link>
+          </div>
+          <div className="tittle">
+            <div>
+              <img src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg" height={'60px'} width={'60px'}></img>
             </div>
-            <div class="item discription">
-            <div class="profile2"></div>
-              <div class="dis2">
-              <h5>Variables in JavaScript | JavaScript Tutorial in Hindi #2</h5>
-              <p>Triggered insaan .12M views  9 months ago</p>
-              </div>
+            <div>
+              <h3 id="vid-name">
+              {myvideo.title}
+              </h3>
+              <p class="pg">{myvideo.channelName}</p>
+              <p class="pg">375k views • {myvideo.uploadedAt} ago</p>
             </div>
-            <div class="item discription">
-            <div class="profile3"></div>
-              <div class="dis3">
-              <h5>Complete Git and GitHub Tutorial for Beginners..|Github.com</h5>
-              <p>Codewithharry .486K views  5 months ago</p>
-              </div>
-            </div>
-            <div class="item content4 con2"></div>
-            <div class="item content5 con2"></div>
-            <div class="item content6 con2"></div>
-            <div class="item discription">
-            <div class="profile4"></div>
-              <div class="dis4">
-              <h5>10 hours of pure black screen in 4k! (read description)</h5>
-              <p>CandRfun .486K views  5 months ago</p>
-              </div>
-            </div>
-            <div class="item discription">
-            <div class="profile5"></div>
-              <div class="dis5">
-              <h5>10 hours of pure black screen in 4k! (read description)</h5>
-              <p>CandRfun .486K views  5 months ago</p>
-              </div>
-            </div>
-            <div class="item discription">
-            <div class="profile6"></div>
-              <div class="dis6">
-              <h5>10 hours of pure black screen in 4k! (read description)</h5>
-              <p>CandRfun .486K views  5 months ago</p>
-              </div>
-            </div>
-        </div>
-     </div>
+          </div>
       </div>
     )
-
-}
-export default Home;
+  }
+function Home() {
+    return (
+      <div className="App">
+          <Header />
+      <div id="dsc">
+        <div id="homesc">
+        <button class="side-btn"><GoHomeFill />
+          <span class="side-btn-lable">
+            <b>Home</b>
+          </span>
+        </button>
+        <button class="side-btn"><FiPlayCircle />
+          <span class="side-btn-lable">
+            <b>Shorts</b>
+          </span>
+        </button>
+        <button class="side-btn"><BsCollectionPlay />
+          <span class="side-btn-lable">
+            <b>Subscription</b>
+          </span>
+        </button>
+        <hr />
+        <button class="side-btn">
+          <span class="you">
+            <b>You</b>
+          </span>
+          <AiOutlineRight />
+        </button>
+        <button class="side-btn"><RxAvatar />
+          <span class="side-btn-lable">
+            <b>Your channel</b>
+          </span>
+        </button>
+        <button class="side-btn"><AiOutlinePlaySquare />
+          <span class="side-btn-lable">
+            <b>Your videos</b>
+          </span>
+        </button>
+        <button class="side-btn"><AiOutlineClockCircle />
+          <span class="side-btn-lable">
+            <b>Watch Later</b>
+          </span>
+        </button>
+        <button class="side-btn"><BiSolidLike />
+          <span class="side-btn-lable">
+            <b>Liked videos</b>
+          </span>
+        </button>
+        <hr/>
+        <h5 className='sub'>Subscriptions</h5>
+        <button class="side-btn" ><span class="side-btn-lable">
+            <b>Triggered insaan</b>
+          </span><span className='subscription'><HiSignal/></span>
+          </button>
+        <button class="side-btn">
+        <span class="side-btn-lable">
+            <b>Zee news</b>
+          </span>
+        <span className='subscription'><HiSignal/></span>
+        </button>
+        <button class="side-btn">
+        <span class="side-btn-lable">
+            <b>Exploin...</b>
+          </span>
+        <span className='subscription'><HiSignal/></span>
+        </button>
+        <button class="side-btn">
+        <span class="side-btn-lable">
+            <b>business</b>
+          </span> 
+        <span className='subscription'><HiSignal/></span>
+        </button>
+        </div>
+        <div id="secsc">
+          <div id="upper-tags">
+            <button class="upper-tags">All</button>
+            <button class="upper-tags">Triggered Insaan</button>
+            <button class="upper-tags">Grand thief auto 5</button>
+            <button class="upper-tags">live</button>
+            <button class="upper-tags">Chess Openings</button>
+            <button class="upper-tags">Movies</button>
+            <button class="upper-tags">Music</button>
+            <button class="upper-tags">Sports</button>
+            <button class="upper-tags">BGMI</button> 
+            <button class="upper-tags">Valorent</button>
+            <button class="upper-tags">Explorin</button>
+            <button class="upper-tags">More...</button>
+          </div>
+          
+           {videosJson.map((video)=>{
+            return <Videogrid myvideo={video} />
+           })}
+        </div>
+      </div>
+      </div>
+    )
+  }
+export default Home

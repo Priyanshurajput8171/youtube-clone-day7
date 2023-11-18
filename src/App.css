@@ -1,272 +1,351 @@
-*{
-    margin: 0%;
-    padding: 0%;
-} 
- .navbar{
-    width: 100%;
-   height: 75px;
-   display: flex;
-   justify-content: space-evenly;
-   border-bottom: 2px solid black;
-   padding: 10px;
+ #bigsc{
+  display: flex;
+  height:50px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: solid;
+  padding:5px;
+}
+#lfsc{
+  display: flex;
+  justify-content: space-between;
+  width: 10%; 
+}
+.b1{
+  display: flex;
+  height:100%;
+  width:25%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.bt{
+  border: 0px;
+  background-color: white;
+  margin-bottom: 5px;
 
+margin-left: 10px;}
+#b2{
+  height:100%;
+  width:70%;
+  background-color: rgb(255, 255, 255);
 }
-#div1{
-   width: 12%;
-   height: 100%;
-   
-   display: flex;
-   justify-content: space-between;
-   margin-left: 5px;
+#misc{
+  display: flex;
+  justify-content: center;
+  width:60%;
 }
-#nav1 {
-   width: 28%;
-   height: 100%;
-   margin-left: 3%;
-   font-size: 40px;
-   border: none;
-   background-color: white;
-   
+#m1{
+  border: solid;
+  height:100%;
+  width:50%;
+  border: solid rgb(158, 158, 158);
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius:20px;
+  border-top-left-radius: 20px;
+  padding: 10px;
 }
-#nav2 {
-   width: 65%;
-   height: 100%;
-   background-image: url('https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500');
-   background-size: cover;
-   
+#m2{
+  height:100%;
+  width:40px;
+  border-radius:50%;
+  border: solid rgb(158, 158, 158);
+  font-size: 17px;
 }
-#div2{
-   width: 50%;
-   height: 100%;
- 
-   display: flex;
-   justify-content: space-between;
+#risc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  margin-right: 1%;
+  height:100%;
+  width:7%;
+  background-color: rgb(255, 255, 255);
+  border-radius:20px;
+  border: solid rgb(192, 191, 191);
 }
-#nav3{
-   width: 90%;
-   height: 100%;
-   background-color: rgb(238, 219, 219);
-   border-radius: 30px;
-   border: 1px solid black;
-   display: flex;
+.signup{
+  margin-left: 10px;
+  margin-bottom:3px;
 }
-.search{
-   width: 90%;
-   height: 100%;
-   display: flex;
+#secsc{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: solid;
+  justify-content: space-evenly;
+  align-items: center;
+  height:100vh;
+  width: auto;
+  
 }
-.search-amazon{
-   width: 90%;
-   height: 100%;
-   border-bottom-left-radius: 30px;
-   border-top-left-radius: 30px;
-   font-size: 30px;
+.a{
+  height: 30%px;
+  width: 388px;
+  margin-top: 10px;
 }
-.search-icon{
-   width: 10%;
-   height: 100%;
-   border-bottom-right-radius: 30px;
-   border-top-right-radius: 30px;
-   border: 1px solid black;
-   font-size: 35px;
+.sc{
+  height:100%;
+  width: 100%;
 }
-#nav4{
-   width: 7%;
-   height: 100%;
-   border: 1px solid black;
-   /* position: relative;
-   left: 10px; */
-   border-radius: 50%;
-   font-size: 30px;
-}    
-#div3{
-   width: 10%;
-   height: 100%;
-   border-radius: 30px;
-   margin-right: 2%;
-   font-size: 20px;
-   }
-#body{
-   margin: 0%;
+#search{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-right: 10px;
+  width: 35px;
+  border: solid rgb(158, 158, 158);
+  border-left: 0px;
 }
-#container2{
-   display: flex;
-   width: 100%;
-   height: 880px;
-   margin: 0px;
+.fit{
+  height:80%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
 }
-#sidebar{
-   width: 10%;
-   height: 100%;
-   border-right: 2px solid black;
-   display: flex;
-   flex-direction: column;
+#homesc{
+  height: 100%;
+  width: 500px;
 }
-#main{
-   width: 90%;
-   height: 95%;
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   column-gap: 5rem;
-   grid-template-rows: repeat(8,1fr);
-   row-gap: 1rem;
-   padding: 5%;
+#dsc{
+  display: flex;
+  height:100%;
 }
-/* @media(max-width:1000px) { */
-  /* #main{
-   width: 90%;
-   height: 95%;
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   column-gap: 5rem;
-   grid-template-rows: repeat(12,1fr);
-   row-gap: 1rem;
-  } */
-/* } */
-.item{
-   /* border: 2px solid black; */
-   display: flex;
-   border-radius: 10px;
+.tittle{
+  display: flex;
 }
-.content1{
-
-   background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-template-design-d45e855a31739ec1f58b2d0ffb7013df_screen.jpg?ts=1591603072);
-   background-size: cover;
+#vid-name{
+  font-size: medium;
+  margin: 0%;
+  margin-top: 1%;
+  white-space: nowrap; 
+  width: 328px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.content2{
-   background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-with-surprised-man-design-template-d36506fbbdd2870d4deacf0d52f1fdf3_screen.jpg?ts=1673490451);
-   background-size: cover;
+.tbn{
+  border-radius: 10px;
+  height:100%;
+  width: 100%;
 }
-.content3{
-   background-image: url(https://content.wepik.com/statics/8315911/preview-page0.jpg);
-   background-size: cover;
+.pg{
+  margin: 0%;
+  font-size: smaller;
 }
-.content4{
-   background-image: url(https://img.freepik.com/premium-vector/pop-art-comics-book-magazine-cover-template-cartoon-funny-vintage-strip-comic-superhero-text_182541-461.jpg?size=626&ext=jpg);
-   background-size: cover;
+.side-btn{
+  display:flex;
+  align-items:center;
+  width: 100%;
+  height: 50px;
+  border:0px;
 }
-.content5{
-   background-image: url(https://cdn.dribbble.com/users/4908050/screenshots/14655981/media/a8756f9d242e4750dd96f2c3a44e62ee.jpg?resize=400x0);
-   background-size: cover;
+.side-btn-lable{
+  margin-left: 20px;
 }
-
-.content6{
-   background-image: url(https://cdn.dribbble.com/users/6487308/screenshots/17212401/media/04c7f69c2cd72ff4abb4b89bce8f39c9.jpg?resize=400x300&vertical=center);
-   background-size: cover;
+.you{
+  margin-right: 10px;
 }
-.con{
-   grid-row-start: 1;
-   grid-row-end: 4;
+#mic{
+  border: 0;
+  height: 100;
+  width: 100%;
+  margin-top: 2px;
+  background-color: white;
+  border-radius: 50%;
 }
-.con2{
-   grid-row-start: 5;
-   grid-row-end: 8;
+#mag{
+  border: 0;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 18px;
 }
-.discription{
-   display: flex;
-   justify-content: space-between;
-
+#upper-tags{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
 }
-.profile1{
-   width: 20%;
-   height: 100%;
-   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
-   background-size: cover;
-   position: relative;
-}
-.dis1{
-   width: 80%;
-   height: 100%;
-   position: relative;
-   top: 12px;
-}
-.profile2{
-   width: 15%;
-   height: 75%;
-   background-image: url("https://img.freepik.com/premium-vector/self-confident-young-caucasian-man-semi-flat-vector-character-head-office-worker-editable-cartoon-avatar-icon-face-emotion-colorful-spot-illustration-web-graphic-design-animation_151150-16190.jpg?w=2000");
-   background-size: cover;
-   position: relative;
-   top: 10px;
-}
-.dis2{
-   width: 80%;
-   height: 100%;
-   position: relative;
-   top: 12px;
-}
-.profile3{
-   width: 15%;
-   height: 85%;
-   background-image: url("https://static.vecteezy.com/system/resources/previews/009/749/656/original/male-profile-mascot-illustration-man-avatar-icon-cartoon-face-business-user-logo-free-vector.jpg");
-   background-size: cover;
-   position: relative;
-   top: 10px;
-}
-.dis3{
-   width: 80%;
-   height: 100%;
-   position: relative;
-   top: 12px;
-}
-.profile4{
-   width: 20%;
-   height: 100%;
-   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
-   background-size: cover;
-   position: relative;
-}
-.dis4{
-   width: 80%;
-   height: 100%;
-   position: relative;
-   top: 12px;
-}
-.profile5{
-   width: 20%;
-   height: 100%;
-   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
-   background-size: cover;
-   position: relative;
-}
-.dis5{
-   width: 80%;
-   height: 100%;
-   position: relative;
-   top: 12px;
-}
-.profile6{
-   width: 20%;
-   height: 100%;
-   background-image: url("https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231");
-   background-size: cover;
-   position: relative;
-}
-.dis6{
-   width: 80%;
-   height: 100%;
-   position: relative;
-   top: 12px;
-}
-.logo-button{
-   width: 100%;
-   height: 50px;
-   border: none;
-   font-size: 20px;
-   background-color: white;
+.upper-tags{
+  height: 60%;
+  width: auto;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: rgb(214, 212, 212);
 }
 button:hover{
-   border: 2px solid black;
+  background-color: rgb(166, 165, 165);
 }
-#nav1:hover{
-   border: 1px solid black;
+.main-content{
+  display: flex;
 }
-.sign{
-   margin-left:10%;
-   color: blue;
+.vdo{
+  width: 65%;
+  height: 100vh;
+  border-right: 2px solid black;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
-.sign-logo{
-   color: blue;
-   font-size: 20px;
+.suggest{
+  width: 35%;
+  height: 100vh;
+}
+.iframe{
+   width: 95%;
+   height: 600px;
+   margin: 22px;
+   border-radius: 10px;
+}
+iframe{
+  border-radius: 10px;
 }
 
+.video-main-page{
+  margin: 5px;
+  margin-top: 10px;
+  display: flex;
+}
 
+.video-frame{
+  width: 65%;
+  padding:20px
+}
+
+.iframe-video{
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 2%;
+}
+
+.suggested-video{
+  display: flex;
+  margin-top: 10px;
+}
+
+.suggestion-image{
+  width: 20%m;
+}
+
+.suggestion-image > img {
+  border-radius: 3%;
+}
+
+.video-info > p{
+  margin-top: 2px;
+}
+.video-info-title{
+  font-weight: bolder;
+}
+.video-details{
+  display: flex;
+  justify-content: space-between;
+}
+.subscribers{
+  font-size: 15px;
+  color: rgb(99, 98, 98);
+}
+.channel-info{
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.channel-name{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.subscribe{
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.video-action-buttons > button{
+  border-radius: 20px;
+  border: 1px solid rgb(230, 227, 227);
+  background-color: rgb(219, 218, 218);
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.video-desc{
+  background-color: rgb(233, 230, 230);
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.svdo{
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+}
+.svdobox1{
+  width: 15vw;
+  height: 100vh;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.svdo1{
+  width: 100%;
+  height: 40%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.svdobox2{
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.svdo2{
+  width: 100%;
+  height: 40%;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+img{
+  border-radius: 5px;
+}
+.view{
+  color: rgb(2, 2, 2);
+  font-weight: 500;
+}
+.commentspan{
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+  margin-top: 20px;
+}
+.comments{
+  margin-top: 20px;
+}
+.addcomment{
+  margin-top: 20px;
+  border: none;
+}
+button{
+  background-color: white;
+  border: none;
+}
+.sub{
+  margin-left: 10px;
+  font-weight: bold;
+}
+.subscription{
+  font-size: 20px;
+  color: red;
+  margin-left: 20px;
+  margin-right: 20px;
+}
